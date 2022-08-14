@@ -1,0 +1,121 @@
+$Background-color--1:#730eb9;
+$Background-color--2:#2c0547 ;
+$Color-secondary:#988aa0;
+
+$Background-colour-green:#9be3de;
+$Background-colour-green-2: #beebe9;
+$Background-colour-green-3:#1eae98;
+$Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
+
+.Main-Section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: $Main-font;
+    text-transform: uppercase;
+    line-height: inherit;
+    // margin-top:4rem ;
+     padding: 4rem;
+    // background-image: linear-gradient(to right,$Background-color--1,$Background-color--2)
+    background-image: linear-gradient(to right,$Background-colour-green-3,$Background-colour-green);
+
+}
+ .Intro_section{
+  color: #fff;
+  width: 40rem;
+  
+
+  &--Main{
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  &--Sub{
+    font-size: 1.2rem;
+  }
+  &--proffession{
+    font-size: 1.4rem;
+
+    // overflow: hidden; /* Ensures the content is not revealed until the animation */
+    // border-right: .15em solid orange; /* The typwriter cursor */
+    // white-space: nowrap; /* Keeps the content on a single line */
+    // margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    // letter-spacing: .15em; /* Adjust as needed */
+    // animation: 
+    //   typing 3.5s steps(40, end),
+    //   blink-caret .5s step-end infinite;
+ 
+  }
+ }  @media (max-width:900px){
+  .Intro_section{
+  width: 40rem;
+
+  &--Main{
+    font-size: 2.3rem;
+    font-weight: 800;
+  }
+  &--Sub{
+    font-size: 1.1rem;
+  }
+  &--proffession{
+    font-size: 1.3rem;
+  }
+}
+.Main-Section{
+  display:flex;
+  text-align: center;
+    line-height: 1;
+    // margin-top:6rem ;
+    padding: 4rem;
+    flex-direction: column-reverse;
+    
+}
+ }
+ .btn{
+  margin-top: 2rem;
+
+ }
+
+//  @keyframes typing {
+//   from { width: 0 }
+//   to { width: 100% }
+// }
+
+// /* The typewriter cursor effect */
+// @keyframes blink-caret {
+//   from, to { border-color: transparent }
+//   50% { border-color: orange; }
+// }
+ 
+
+//MEDIA QUERY SECTION 
+
+@media (max-width:900px){
+  .Main-Section{
+    line-height: 1.5;
+  }
+
+}
+@media (max-width:600px){
+  .Main-Section{
+    padding: 5rem;
+
+   
+  }
+  .Intro_section{
+    color: #fff;
+    width: 40rem;
+    
+  
+    &--Main{
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+    &--Sub{
+      font-size: 1rem;
+    }
+    &--proffession{
+      font-size: 1.1rem;
+    }
+  }
+
+}

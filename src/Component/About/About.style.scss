@@ -1,0 +1,141 @@
+$color-normal:#fff;
+$Background-color--1:#730eb9;
+$Background-color--2:#2c0547 ;
+$Color-secondary:#988aa0;
+
+$Background-colour-green:#9be3de;
+$Background-colour-green-2: #beebe9;
+$Background-colour-green-3:#1eae98;
+$Background-color--white:#fffdf9;
+$Background-color--black:#1b2430;
+$Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
+
+
+
+.abt-section{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+     background-color:$Background-color--white;
+    //background-color: $Color-secondary;
+    padding: 8rem 4rem ;
+  color:$Background-color--black;
+   //color:$color-normal ;
+   font-family: $Main-font;
+
+  &--info{
+   //align-self: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+  
+  }
+   
+  &--img{
+   
+
+    &__profile{
+    width:60%;
+    border-radius: 30px;
+    //outline: 10px solid $Background-colour-green-3;
+    //outline-offset: 15px;
+    box-shadow: 8px 4px 9px 6px $Background-colour-green-3;
+        
+    }
+  }
+
+   &-heading{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: $Background-colour-green-3;
+
+    &__text{
+        font-size: 1.2rem;
+        line-height: 2;
+        font-weight: 300;
+        width: 40rem;
+        font-family: $Main-font;
+        
+    }
+   }
+}
+.cv_section{
+  margin-top: 1.6rem;
+
+&__dwnload{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  color: $Background-color--white;
+  font-weight: 400;
+  background-color: $Background-colour-green-3;
+  height: 3rem;
+  width: 12rem;
+  box-shadow: 2px 3px 2px 4px $Background-colour-green-2;
+
+  &:hover,
+  &:focus,
+  &:active{
+    animation: paulse 2s infinite;
+    
+  }
+}
+ 
+}
+@keyframes paulse{
+  0% {  
+      transform: scale(1);
+      box-shadow: none;
+ 
+  }
+ 
+  50%{
+      transform: scale(1.05);
+      box-shadow: 0 1rem 4rem rgba(0, 0, 0, .25);
+ 
+ 
+  }
+ 
+  100%{
+     transform: scale(1);
+     box-shadow: none;
+ 
+ 
+  }
+ 
+ }
+
+ //MEDIA QUERY SECTION
+
+ @media (max-width:900px){
+  .abt-section{
+    padding: 2rem;
+   
+
+    &--img{
+   
+      &__profile{
+      display: none;
+         
+      }
+    }
+
+    &-heading{
+    
+      &__text{
+          font-size: 1.2rem;
+          line-height: 2;
+          font-weight: 300;
+          width: 100%;
+          font-family: $Main-font;
+          
+      }
+     }
+
+  }
+
+}

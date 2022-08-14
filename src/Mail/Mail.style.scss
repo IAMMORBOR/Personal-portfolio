@@ -1,0 +1,33 @@
+$Background-color--1:#730eb9;
+$Background-color--2:#2c0547 ;
+$Color-secondary:#988aa0;
+$Color-minor:#c8d026;
+$Background-colour-green:#9be3de;
+$Background-colour-green-2: #beebe9;
+$Background-colour-green-3:#1eae98;
+$Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
+
+.link--btn{
+    font-size: 1.2rem;
+    height: 3rem;
+    padding: .6rem 1.7rem;
+    border-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family:$Main-font ;
+    //background-color: $Color-minor;
+    background-color:$Background-colour-green;
+    color: $Background-colour-green-3;
+   // color:$Background-color--2;
+    border:none;
+    
+    
+
+    &:hover{
+        color: #fff;
+        background-color: $Background-colour-green-3;
+    }
+
+   
+}

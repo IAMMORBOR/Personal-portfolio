@@ -1,0 +1,177 @@
+$Background-colour-green:#9be3de;
+$Background-colour-green-2: #beebe9;
+$Background-colour-green-3:#1eae98;
+$Background-color--white:#fffdf9;
+$Background-color--black:#1b2430;
+$Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
+
+
+
+.contact-section{
+
+   padding: 5.8rem 0 0 0;
+   background-color: #fffdf9;
+    font-family: $Main-font;
+     display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+    &__heading{
+        font-size: 2.5rem;
+        color: $Background-colour-green-3;
+        text-transform: uppercase;
+        word-spacing: 1;
+        font-weight:700;
+        margin-bottom: 1.5rem;
+
+    }
+
+    &--text{
+        font-size: 1.2rem;
+        color: $Background-color--black;
+        margin-bottom: 1.2rem;
+        width: 80%;
+       text-align: center;
+        
+        
+    }
+    &--contact{
+        font-size: 1.3rem;
+        font-family: $Main-font;
+
+    }
+    &__link{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+  
+    &__icon_container{
+     display: flex;
+    justify-content: center;
+   align-items: center;
+    height: 5rem;
+    width: 5rem;
+    background-color: $Background-color--white;
+    border-radius: 50px;
+    border:2px solid $Background-colour-green-3;
+    margin-right: .6rem;
+
+    
+    }
+    
+    
+
+    &__icon{
+        font-size: 1.8rem;
+        color: $Background-colour-green-3;
+    }
+    &--mail,
+    &--phone,
+    &--address{
+       background-color: $Background-colour-green-3;
+       height: 3rem;
+       width: 20rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50px;
+      margin-bottom: 1.3rem;
+
+        &__icon--text{
+            color: $Background-color--white;
+            font-weight: 600;
+           
+           
+        }
+    }
+    &--phone{
+        background-color: $Background-colour-green-2;
+        margin-bottom: 1.3rem;
+        margin-left: 4rem;
+        
+       
+    
+      
+    }
+    &--address{
+         width: 30rem;
+        margin-left: 8rem;
+    }
+
+    
+}
+.contact-section__link:hover,
+.contact-section__link:active{
+    font-size: 1rem;
+
+    .contact-section__icon_container{
+        height: 4rem;
+        width: 4rem;
+    }
+    .contact-section--address{
+        width: 25rem;
+       
+    }
+
+}
+
+.footer_section{
+    background-color: $Background-colour-green-3;
+   height: .6rem;
+   width: 100%;
+   text-align: center;
+   color: $Background-color--white;
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   text-align: center;
+   padding: 3rem 0px;
+   margin-top: 3rem;
+ 
+}
+//MEDIA QUERY SECTION
+@media (max-width:900px){
+    .contact-section{
+     
+        &--address{
+            width: 30rem;
+        }
+
+       
+    }
+
+}
+@media (max-width:600px){
+    .contact-section{
+        &--contact{
+            font-size: 1rem;
+            padding: 3rem;
+         
+        }
+        &--mail,
+        &--phone,
+        &--address{
+           height: 3rem;
+           width: 20rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50px;
+          margin-bottom: 1.3rem;
+        }
+        &--address{
+            width: 25rem;
+        }
+
+        &__icon_container{
+        
+           height: 4.5rem;
+            width: 4.5rem;
+        }
+
+    }
+}
+
+

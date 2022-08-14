@@ -1,0 +1,79 @@
+$Background-colour-green:#9be3de;
+$Background-colour-green-2: #beebe9;
+$Background-colour-green-3:#1eae98;
+$Background-color--white:#fffdf9;
+$Background-color--black:#1b2430;
+$color-grey: #d3d3d3;
+$Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
+
+
+.project-section{
+ 
+
+    padding: 4rem;
+    &__profile{
+        width: 25%;
+        box-shadow:5px 7px 4px $color-grey;
+         
+        border-radius: 10px;
+     
+    }
+    &-info{
+        margin: 1rem ;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+        color: $Background-colour-green-3;
+    }
+    &__links{
+
+       &--icon-sec{
+            display: flex;
+            align-items: center;
+            background-color: $Background-colour-green-3;
+            padding: .3rem 1rem;
+            border-radius: 30px;
+            color: $Background-color--white;
+            margin-bottom: .6rem;
+            
+        }
+        &-icon{
+           // color: $Background-color--white;
+            font-size: 1.5rem;
+         
+        }
+
+    }
+    &--social{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+}
+.project-links{
+    display: none;
+    position: absolute;
+     width:28.5% ;
+     background-color: $Background-color--white;
+     top: -3%;
+    left: 40%;
+     font-family: $Main-font;
+        padding: .7rem;
+  
+    box-shadow:5px 7px 4px $color-grey;
+    border-radius: 10px;
+}
+.project-section__profile:hover + .project-links{
+    display: inline-block;
+ 
+   
+   
+}
+.image-container{
+    position: relative;
+   
+ 
+       
+        
+}
+

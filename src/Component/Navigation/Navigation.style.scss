@@ -1,0 +1,119 @@
+
+$Background-color--1:#730eb9;
+$Background-color--2:#2c0547 ;
+$Color-secondary:#988aa0;
+$Color-minor:#c8d026;
+
+$Background-colour-green:#9be3de;
+$Background-colour-green-2: #beebe9;
+$Background-colour-green-3:#1eae98;
+$Background-color--black:#1b2430;
+$Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
+$Background-color--white:#fffdf9;
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    height: 3.5rem;
+    align-items: center;
+     //background-color:$Background-color--2;
+     background-image: linear-gradient(to right,$Background-colour-green-3,$Background-colour-green);
+    box-shadow: 8px 2px 9px 0px $Color-secondary;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+
+
+   
+
+   
+    &_Nav{
+        margin-right: 2rem;
+        display: flex;
+        
+       &_link{
+        padding: .3rem 1rem;
+        color: #fff;
+        font-size: 1.3rem;
+        font-family:$Main-font;
+        font-weight: 300;
+       
+       }
+    }
+}
+.logo{
+    margin-left: 4rem;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.3rem;
+    font-family: $Main-font;
+    font-style: italic;
+}
+
+.MobileNav{
+    display: none;   
+}
+
+.MobileNav .Header_Nav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 3.5rem;
+     right:-2rem;
+    background-color:$Background-color--black;
+    width:30%;
+    height: 100vh;
+    border-top: 2px solid $Color-secondary; 
+    padding: 1rem 0;
+    opacity: 0.5;
+    box-shadow: 8px 2px 9px 0px $Color-secondary;
+   
+
+
+    &_link{
+       font-size: 1.2rem;
+   
+     
+    }
+}
+.DeskNav .Header_Nav_link,
+.MobileNav .Header_Nav_link{
+    &:hover{
+   border-bottom: 3px solid $Background-colour-green-3;
+
+}
+}
+.MobileNav .Nav-div{
+    padding: 0rem 0rem 1rem 0rem;
+   align-self: center;
+    font-size: 1.2rem;
+
+}
+.MobileNav .Header_Nav_link{
+    &:hover{
+        color:$Background-colour-green-3;
+       
+    }
+}
+
+// MEDIA QUERY SECTION
+
+@media (max-width:900px){
+    .DeskNav{
+        display: none;
+    }
+    .MobileNav{
+        display: flex;
+        align-items: center;
+       
+
+        .Hamburger-menu{
+            position: absolute;
+            right: 5%;
+            cursor: pointer;
+        }
+    } 
+}

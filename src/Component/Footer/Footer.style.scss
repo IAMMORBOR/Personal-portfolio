@@ -1,0 +1,21 @@
+$Background-colour-green:#9be3de;
+$Background-colour-green-2: #beebe9;
+$Background-colour-green-3:#1eae98;
+$Background-color--white:#fffdf9;
+$Background-color--black:#1b2430;
+$Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
+
+.footer_section{
+    background-color: $Background-colour-green-3;
+   height: 1rem;
+   width: 100%;
+   text-align: center;
+   color: $Background-color--white;
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   text-align: center;
+   padding: 3rem 0px;
+   margin-top: 4rem;
+  
+}

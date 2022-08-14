@@ -1,0 +1,18 @@
+@mixin respond-phone {
+    @media (max-width:900px){
+        .DeskNav{
+            display: none;
+        }
+        .MobileNav{
+            display: flex;
+            align-items: center;
+           
+    
+            .Hamburger-menu{
+                position: absolute;
+                right: 5%;
+                cursor: pointer;
+            }
+        } 
+    }
+}
