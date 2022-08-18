@@ -8,7 +8,7 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
 
 
 .contact-section{
-
+    //width: 100%;
    padding: 5.8rem 0 0 0;
    background-color: #fffdf9;
     font-family: $Main-font;
@@ -39,6 +39,7 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
     &--contact{
         font-size: 1.3rem;
         font-family: $Main-font;
+        margin-top: 2.5rem;
 
     }
     &__link{
@@ -72,7 +73,7 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
     &--address{
        background-color: $Background-colour-green-3;
        height: 3rem;
-       width: 20rem;
+       width: 25rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -127,8 +128,10 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
    align-content: center;
    justify-content: center;
    text-align: center;
-   padding: 3rem 0px;
-   margin-top: 3rem;
+   padding: 3rem 0;
+   font-size: 1.3rem;
+   position: fixed;
+   bottom: 0;
  
 }
 //MEDIA QUERY SECTION
@@ -139,20 +142,28 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
             width: 30rem;
         }
 
-       
+       &--contact{
+        margin-top: 0rem;
+        
+       }
+    }
+    .footer_section{
+        font-size: 1rem;
     }
 
 }
 @media (max-width:600px){
     .contact-section{
+        height: 100%;
+       padding: 4rem 0 0 0;
         &--contact{
             font-size: 1rem;
-            padding: 3rem;
+            padding: 2rem;
          
         }
         &--mail,
-        &--phone,
-        &--address{
+        &--phone
+        {
            height: 3rem;
            width: 20rem;
           display: flex;
@@ -161,9 +172,9 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
           border-radius: 50px;
           margin-bottom: 1.3rem;
         }
-        &--address{
-            width: 25rem;
-        }
+        // &--address{
+        //     width: 2rem;
+        // }
 
         &__icon_container{
         
@@ -171,6 +182,9 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
             width: 4.5rem;
         }
 
+    }
+    .footer_section{
+        font-size: .7rem;
     }
 }
 

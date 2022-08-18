@@ -13,8 +13,8 @@ const About =()=>{
             // transition={{ delay: 0.10 }}> */}
                <div className='abt-section'>
                    <div className='abt-section--img'>
-                       <img className="abt-section--img__profile" src={profileImg} />
-                   </div>
+                    <img className="abt-section--img__profile" src={profileImg} />
+                   </div> 
 
                    <div className='abt-section--info'>
                        <h3 className="abt-section-heading">ABOUT ME</h3>

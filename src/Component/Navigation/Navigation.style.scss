@@ -1,8 +1,4 @@
 
-$Background-color--1:#730eb9;
-$Background-color--2:#2c0547 ;
-$Color-secondary:#988aa0;
-$Color-minor:#c8d026;
 
 $Background-colour-green:#9be3de;
 $Background-colour-green-2: #beebe9;
@@ -16,20 +12,14 @@ $Background-color--white:#fffdf9;
     justify-content: space-between;
     height: 3.5rem;
     align-items: center;
-     //background-color:$Background-color--2;
      background-image: linear-gradient(to right,$Background-colour-green-3,$Background-colour-green);
-    box-shadow: 8px 2px 9px 0px $Color-secondary;
+    box-shadow: 8px 2px 9px 0px $Background-colour-green-2;
     padding: 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
 
-
-
-   
-
-   
     &_Nav{
         margin-right: 2rem;
         display: flex;
@@ -66,17 +56,13 @@ $Background-color--white:#fffdf9;
     background-color:$Background-color--black;
     width:30%;
     height: 100vh;
-    border-top: 2px solid $Color-secondary; 
+    border-top: 2px solid $Background-colour-green-2; 
     padding: 1rem 0;
     opacity: 0.5;
-    box-shadow: 8px 2px 9px 0px $Color-secondary;
-   
-
+    box-shadow: 8px 2px 9px 0px $Background-colour-green-2;
 
     &_link{
        font-size: 1.2rem;
-   
-     
     }
 }
 .DeskNav .Header_Nav_link,
@@ -100,8 +86,8 @@ $Background-color--white:#fffdf9;
 }
 
 // MEDIA QUERY SECTION
-
 @media (max-width:900px){
+   
     .DeskNav{
         display: none;
     }
@@ -117,3 +103,12 @@ $Background-color--white:#fffdf9;
         }
     } 
 }
+@media (max-width:600px){
+    .Header{
+        width: 100%;
+    }
+    .logo{
+        margin-left: 1.5rem;}
+}
+   
+

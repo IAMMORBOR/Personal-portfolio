@@ -17,14 +17,11 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
     justify-content:center;
     text-align: center;
      background-color:$Background-color--white;
-    //background-color: $Color-secondary;
-    padding: 8rem 4rem ;
+     padding: 4rem;
   color:$Background-color--black;
-   //color:$color-normal ;
    font-family: $Main-font;
 
   &--info{
-   //align-self: center;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -33,14 +30,12 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
   
   }
    
-  &--img{
+   &--img{
+  
    
-
     &__profile{
-    width:60%;
+      width:50%;
     border-radius: 30px;
-    //outline: 10px solid $Background-colour-green-3;
-    //outline-offset: 15px;
     box-shadow: 8px 4px 9px 6px $Background-colour-green-3;
         
     }
@@ -55,7 +50,7 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
         font-size: 1.2rem;
         line-height: 2;
         font-weight: 300;
-        width: 40rem;
+       width: 50rem;
         font-family: $Main-font;
         
     }
@@ -109,7 +104,30 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
  
  }
 
+
  //MEDIA QUERY SECTION
+ @media (max-width:1200px){
+  .abt-section{
+    &--img{
+   
+      &__profile{
+      width: 50%;
+      margin-top: 3rem;
+         
+      }
+    }
+
+    &-heading{
+    
+      &__text{
+          width: 30rem; 
+      }
+     }
+
+  }
+
+}
+ 
 
  @media (max-width:900px){
   .abt-section{
@@ -138,4 +156,9 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
 
   }
 
+}
+@media (max-width:600px){
+  .abt-section{
+    width: 100%;
+  }
 }

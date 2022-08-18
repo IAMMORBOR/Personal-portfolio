@@ -26,7 +26,7 @@ const Home =()=>{
             }}  />
             </div> */}
            
-             <h4 className="Intro_section--proffession"> UX developer + Frontend Developer</h4>
+             <h4 className="Intro_section--proffession">Frontend Developer</h4>
             <div className='btn'>
            <ButtonMailto className="Intro_section--btn" label ='Get in touch'mailto ='mailto:ofamotibe@gmail.com'/>
              </div>
