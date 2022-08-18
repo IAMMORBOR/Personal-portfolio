@@ -7,7 +7,10 @@ $Background-color--black:#1b2430;
 $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
 $Background-color--white:#fffdf9;
 
+
+
 .Header{
+    
     display: flex;
     justify-content: space-between;
     height: 3.5rem;
@@ -105,10 +108,28 @@ $Background-color--white:#fffdf9;
 }
 @media (max-width:600px){
     .Header{
-        width: 100%;
+        max-width: 90.3%;
+
+        &_Nav{
+            margin-right: 2rem;
+            display: flex;
+            
+           &_link{
+            padding: .3rem .6rem;
+            
+          
+           
+           }
+        }
     }
+ 
     .logo{
-        margin-left: 1.5rem;}
+        margin-left: 2.5rem;}
+        .MobileNav .Header_Nav{
+            right: 1rem;
+            background-color: red;
+        }
+
 }
 
 
