@@ -105,7 +105,10 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
 }
 @media (max-width:600px){
   .Main-Section{
-    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 4rem 0;
+   
   }
  
   .Intro_section{
