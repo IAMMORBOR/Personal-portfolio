@@ -68,9 +68,11 @@ $Main-font:'Josefin+Sans','Roboto','EB+Garamond', sans-serif;
 
 @media (max-width:900px){
     .skill-section{
-       padding: 2rem;
+        padding: 6rem 0;
+        max-height: 100vh;
        
-
+       &--stack{
+        padding-bottom: 3rem ;}
        &__mystack{
         height: 4rem;
         width: 4rem;
@@ -95,12 +97,16 @@ $Main-font:'Josefin+Sans','Roboto','EB+Garamond', sans-serif;
 @media (max-width:600px){
     .skill-section{
       width: 100%;
+      
+      max-height: 100vh;
 
        &__mystack{
         height: 3rem;
         width: 3rem;
         border-radius: 50%;
     }
+   
+
     &__icon{
         font-size: 1.2rem;
         color:#fff;
