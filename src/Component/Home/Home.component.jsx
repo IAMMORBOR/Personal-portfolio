@@ -13,7 +13,7 @@ const Home =()=>{
 
         if (Hour < 12){
             greet='Morning'
-        }else if (Hour == 12 && Hour < 20){
+        }else if (Hour > 12 && Hour < 18){
             greet= "Afternoon"
         }else{
             greet="Evening"
