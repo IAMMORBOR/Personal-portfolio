@@ -1,48 +1,36 @@
-import projectImg from '../ImageFolder/img1.png.jpg';
-import './project.style.scss';
-import { Link } from 'react-router-dom';
-import {AiFillGithub} from 'react-icons/ai'
-import {TbWorld}from 'react-icons/tb'
+import ProjectProp from "./ProjectProp.component";
+import ProjectSocial from "./projectSocial.component";
+//import './project.style.scss'
 
-const Projects =()=>{
+
+const Projects =(props)=>{
     return (
-        <div>
-            <div className='project-section'>
-                <div className='image-container'>
-                    <img className="project-section__profile" src={projectImg} />
-                    <div className='project-links'>
-                        <p className='project-section-info'>
-                            PLorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Reprehenderit,
-                        </p>
-                        <div className='project-section--social'>
-                            <Link to='/' className='project-section__links'>
-                                <div className='project-section__links--icon-sec'>
-                                    <AiFillGithub className='project-section__links-icon' />
-                                    <p className='project-section__links-icon--text'>
-                                        Git hub
-                                    </p>
-                                </div>
-                            </Link>
-                            <Link to='/' className='project-section__links'>
-                                <div className='project-section__links--icon-sec'>
-                                    <TbWorld className='project-section__links-icon' />
-                                    <p className='project-section__links-icon--text'>
-                                        Visit Website
-                                    </p>
-                                </div>
-
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-               
-            </div>
-
-            
-
+        <div className="Project-container">
+             <ProjectProp text="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Iure veritatis necessitatibus doloremque
+       placeat temporibus! Iusto ipsam sed minima accusantium
+       laborum delectus voluptatibus recusandae! Suscipit 
+       voluptatem pariatur obcaecati, magnam vitae commodi."
+       />
+       
+       <ProjectProp text="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Iure veritatis necessitatibus doloremque
+       placeat temporibus! Iusto ipsam sed minima accusantium
+       laborum delectus voluptatibus recusandae! Suscipit 
+       voluptatem pariatur obcaecati, magnam vitae commodi."
+       />
+       
+       <ProjectProp text="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Iure veritatis necessitatibus doloremque
+       placeat temporibus! Iusto ipsam sed minima accusantium
+       laborum delectus voluptatibus recusandae! Suscipit 
+       voluptatem pariatur obcaecati, magnam vitae commodi."
+       />
+       
 
         </div>
+   
+     
     )
 }
 export default Projects;
