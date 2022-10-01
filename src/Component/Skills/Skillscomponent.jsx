@@ -70,7 +70,7 @@ const Skills =()=>{
                         <p className='skill-section__icon--text'>REACT JS</p>
                     </motion.div>
 
-                    <motion.div className='skill-section--icon__container'
+                    {/* <motion.div className='skill-section--icon__container'
                         initial={AnimateFrom1}
                         animate={AnimateTo1}
                         transition={{ type:"spring", stiffness:120 }}>
@@ -88,7 +88,7 @@ const Skills =()=>{
                             <FaNodeJs className='skill-section__icon ' />
                         </div>
                         <p className='skill-section__icon--text'>NODE JS</p>
-                    </motion.div>
+                    </motion.div> */}
 
                 </div>
                 
