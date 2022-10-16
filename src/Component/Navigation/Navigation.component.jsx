@@ -11,8 +11,6 @@ const Navigation = () => {
           <div>
                 <Link className='logo' to='/'>Morbor </Link>
             </div>
-          
-       
         <DeskNav />
         <MobileNav />
        </div> 
@@ -22,6 +20,4 @@ const Navigation = () => {
 
   )
 }
-
-
 export default Navigation;

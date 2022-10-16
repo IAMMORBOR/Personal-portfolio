@@ -8,13 +8,12 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
 
 .Flip-Card-Containner {
     margin-top: 4rem;
-    width: 400px;
-    height: 400px;
+    width: 420px;
+    height: 450px;
     perspective: 1000px;
     -moz-perspective: 1000px;
 
 }
-
 .Flip-Card-Containner:hover .Flip-card {
     transform: rotateY(180deg);
 }
@@ -35,19 +34,13 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
         backface-visibility: hidden;
         box-shadow:5px 7px 4px $color-grey;
     }
-
-    // &_front {
-    // border: 2px solid $Background-colour-green-3;
-        
-    // }
-
     &_back {
         background-color: $Background-colour-green;
         transform: rotateY(180deg);
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 3rem;
+        padding: 1rem 3rem 0 3rem;
 
     }
 }
@@ -58,15 +51,16 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
 }
 
 .social-container {
-    margin-top: 4rem;
+    margin-top: 1rem;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+   position:absolute;
+    bottom: 2rem;
 
 }
 
 .project-section__links {
-
+    margin-right: 6rem;
 
     &--icon-sec {
         display: flex;
@@ -90,137 +84,28 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
     justify-content: space-around;
     align-items: center;
     padding: 5rem 2rem;
+    
 
 }
-
-
-
-
-
-
-
-
-
-// .image-container{
-//     // height: 52rem;
-//     transition: all .8s;
-//     position: absolute;
-    
-//     //width: 100%;
-//     backface-visibility: hidden;
-//     border-radius:3px;
-//     overflow: hidden;
- 
-// }
-
-// .project-section{
-//     perspective: 150rem;
-//     -moz-perspective: 150rem;
-
-//   //height:8rem;
-//   //width: 100%;
-
-
-//     padding: 4rem;
-//     &__profile{
-//         position: relative;
-//         top: 6;
-//         left: 0;        
-//        // width: 25%;
-//        height: 16rem;
-//        transition: all .8s;
-       
-      
-//         // &:hover{
-//         //     transform: rotateY(-180deg);
-//         //  }
-       
-        
-       
-        
-
-       
-//     }
-//     &-info{
-//         margin: 1rem ;
-//         margin-bottom: 2rem;
-//         font-size: 1rem;
-//         color: $Background-colour-green-3;
-//     }
-//     &__links{
-
-//        &--icon-sec{
-//             display: flex;
-//             align-items: center;
-//             background-color: $Background-colour-green-3;
-//             padding: .3rem 1rem;
-//             border-radius: 30px;
-//             color: $Background-color--white;
-//             margin-bottom: .6rem;
-            
-//         }
-//         &-icon{
-//            // color: $Background-color--white;
-//             font-size: 1.5rem;
-         
-//         }
-
-//     }
-//     &--social{
-//         display: flex;
-//         justify-content: space-around;
-//         align-items: center;
-        
-//     }
-// }
-// // .project-links{
-// //      display: none;
-// //      height: 16rem;
-// //     box-shadow:5px 7px 4px $color-grey;
-// //      position: relative;
-// //      top: 6;
-// //     left: 0;
-// //       backface-visibility: hidden;
-// //     border-radius:3px;
-// //     overflow: hidden;
-// //      border-radius: 10px;
-// //     transition: all .10s;
-// //     background-color: red;
-// //     font-family: $Main-font;
-// //      padding: .7rem;
-// //     //background-color: hsla(0,0%,100%,.3);
-
-// //     transform: rotateY(180deg);
-
-// //     // &:hover{
-// //     //     transform: rotateY(0);
-// //     // }
-// // }
-
-// // .project-section__profile:hover{
-// //     transform:translateY(50rem)
-// // }
-
-// // .project-section__profile:hover + .project-links{
+//MEDIA QUERY SECTION
+@media (max-width:75em){
+    .Flip-Card-Containner{
+        margin-left: 2rem;
    
-// // }
-
-
-// // .img-containner:hover + .project-links{
-// //     transform: rotateY(0);
-
-// // }
-
-// // .image-containner:hover + .project-section__profile{
-// //     transform: rotateY(-180deg);
-
-// // }
-
-
-// // &:hover{
-// //     transform: rotateY(-180deg);
-// //  }
+    }
+    .Project-container{
+        display: grid;
+       grid-template-columns: auto auto;
        
-        
-
-
+    }
+   }
+ 
+@media (max-width:56.25em){
+   .Project-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+   }
+  }

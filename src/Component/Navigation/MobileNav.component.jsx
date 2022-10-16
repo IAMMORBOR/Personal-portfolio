@@ -4,7 +4,7 @@ import{RiCloseFill}from 'react-icons/ri';
 import { useState } from "react";
 
 
-const MobileNav = () => {
+const MobileNav= () => {
     const [Open, SetOpen] = useState(false);
 
     const OpenMenu = <HiMenuAlt3 className="Hamburger-menu"
@@ -23,7 +23,7 @@ const MobileNav = () => {
     return (
         <div className="MobileNav">
             {Open ? CloseMenu : OpenMenu}
-            {Open && <NavLink isMobileNav={Open} CloseMobileNavMenu={CloseMobileNavMenu} />}
+            {Open && <NavLink isMobileNav={OpenMenu} CloseMobileNavMenu={CloseMobileNavMenu} />}
           
         </div>
       
