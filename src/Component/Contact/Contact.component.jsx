@@ -6,6 +6,7 @@ import{ImWhatsapp} from 'react-icons/im';
 import{GoLocation} from 'react-icons/go';
 
 
+
 import './Contact.style.scss';
 
 const Contact = () => {

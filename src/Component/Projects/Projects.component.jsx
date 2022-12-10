@@ -1,15 +1,18 @@
 import ProjectsProps from "./ProjectProp.component";
-import projectImg from '../ImageFolder/img1.png.jpg';
+import projectImg from '../ImageFolder/linktree.png.jpg';
 import morecipeimg from '../ImageFolder/MorecipeImg.png.jpg'
-import blogimage from '../ImageFolder/BlogPostImg.png.jpg'
+import blogimage from '../ImageFolder/meta-bnb--png.jpg'
 const Projects =(props)=>{
   return (
     <div className="Project-container">
-      <ProjectsProps text="Padiimi app is a blogpost where user can write and delete a post post.
-     firebase authentication was used here "
+      <ProjectsProps text="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Iure veritatis necessitatibus doloremque
+       placeat temporibus! Iusto ipsam sed minima accusantium
+       laborum delectus voluptatibus recusandae! Suscipit 
+       voluptatem pariatur obcaecati, magnam vitae commodi "
        image= {blogimage}
-       github='https://github.com/IAMMORBOR/Blog-Post.git'
-       link = 'https://padiimi.netlify.app'
+       github='https://github.com/IAMMORBOR/MetaBNB--HNG-project.git'
+       link = 'https://meta-bnb-mo-version.netlify.app'
       />
       <ProjectsProps text ="Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Iure veritatis necessitatibus doloremque
@@ -17,8 +20,8 @@ const Projects =(props)=>{
        laborum delectus voluptatibus recusandae! Suscipit 
        voluptatem pariatur obcaecati, magnam vitae commodi."
         image = {projectImg}
-        github='https://github.com/IAMMORBOR/Portfolio.git'
-        link ='https://johnportfoliodesign.netlify.app'
+        github='https://github.com/IAMMORBOR/Linktree-HNG-Stage-1-.git'
+        link ='https://linktreebymo.netlify.app/'
       />
       <ProjectsProps text="Morecipe project is a devchallenge project that is designed to help
        user see :
