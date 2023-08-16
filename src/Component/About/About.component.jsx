@@ -5,7 +5,16 @@ import profileImg from '../ImageFolder/img.png.jpg';
 const About =()=>{
     // handle pdf download 
     const downloadResume =()=>{
-        fetch(Omobolanle Famotibe CV.pdf)
+        fetch("OmobolanleFamotib CV.pdf").then((response)=>{
+            response.blob().then((blob)=>{
+                const fileURL =window.URL.createObjectURL(blob)
+                let alink = document.createElement("a")
+                alink.href =fileURL;
+                alink.download ="OmobolanleFamotib CV.pdf";
+                alink.click();
+            })
+
+        })
     }
    return(
        <>
@@ -23,7 +32,8 @@ const About =()=>{
                      In my spare time, I love to watch movies and Read.
                     </p>
                     <div className='cv_section'>
-                     <a target='_blank' href='https://1drv.ms/b/s!ApVoLCMLSnQighMqpDtsKOmr3OFs' download='resume' className='cv_section__dwnload'>Download Resume</a>
+                     {/* <a target='_blank' href='https://1drv.ms/b/s!ApVoLCMLSnQighMqpDtsKOmr3OFs' download='resume' className='cv_section__dwnload'>Download Resume</a> */}
+                     <button onClick={downloadResume} className='cv_section__dwnload'> Download Resume </button>
                     </div>
                 </div>
             </div>
