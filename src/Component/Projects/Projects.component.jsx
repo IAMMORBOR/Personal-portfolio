@@ -2,6 +2,8 @@ import ProjectsProps from "./ProjectProp.component";
 import projectImg from '../ImageFolder/linktree.png.jpg';
 import morecipeimg from '../ImageFolder/MorecipeImg.png.jpg'
 import blogimage from '../ImageFolder/meta-bnb--png.jpg'
+import serviceSchoolHouseProject from "../../Component/ImageFolder/service-school-house-project.PNG"
+import mobilProject from "../../Component/ImageFolder/mobilProject.png"
 const Projects =(props)=>{
   return (
     <div className="Project-container">
