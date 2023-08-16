@@ -3,6 +3,10 @@ import './About.style.scss';
 import profileImg from '../ImageFolder/img.png.jpg';
 
 const About =()=>{
+    // handle pdf download 
+    const downloadResume =()=>{
+        fetch(Omobolanle Famotibe CV.pdf)
+    }
    return(
        <>
            <div className='abt-section'>
