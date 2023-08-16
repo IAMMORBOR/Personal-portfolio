@@ -9,8 +9,8 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
 .Flip-Card-Containner {
     margin-top: 4rem;
     // width: 400px;
-    width: 510px;
-    height: 400px;
+    width: 410px;
+    height: 380px;
     perspective: 1000px;
     -moz-perspective: 1000px;
 
@@ -87,7 +87,7 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
 .Project-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 5px;
     place-items: center;
 
 }
