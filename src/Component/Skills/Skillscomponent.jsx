@@ -2,6 +2,11 @@ import './Skills.style.scss';
 import{ImCss3}from 'react-icons/im';
 import{AiOutlineHtml5}from 'react-icons/ai';
 import{IoLogoJavascript}from 'react-icons/io';
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaNode } from "react-icons/fa6";
+import { SiTypescript } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+import { SiMui } from "react-icons/si";
 import{FaSass}from 'react-icons/fa';
 import {GrReactjs}from 'react-icons/gr';
 import {motion}from 'framer-motion'
@@ -59,6 +64,51 @@ const Skills =()=>{
                         <GrReactjs className='skill-section__icon ' />
                     </div>
                     <p className='skill-section__icon--text'>REACT JS</p>
+                </motion.div>
+                <motion.div className='skill-section--icon__container'
+                    initial={AnimateFrom1}
+                    animate={AnimateTo1}
+                    transition={{ type:"spring", stiffness:120  }}>
+                    <div className="skill-section__mystack">
+                        <TbBrandNextjs className='skill-section__icon ' />
+                    </div>
+                    <p className='skill-section__icon--text'>Next JS</p>
+                </motion.div>
+                <motion.div className='skill-section--icon__container'
+                    initial={AnimateFrom1}
+                    animate={AnimateTo1}
+                    transition={{ type:"spring", stiffness:120  }}>
+                    <div className="skill-section__mystack">
+                        <SiTypescript className='skill-section__icon ' />
+                    </div>
+                    <p className='skill-section__icon--text'>Typescript</p>
+                </motion.div>
+                <motion.div className='skill-section--icon__container'
+                    initial={AnimateFrom1}
+                    animate={AnimateTo1}
+                    transition={{ type:"spring", stiffness:120  }}>
+                    <div className="skill-section__mystack">
+                        <FaNode className='skill-section__icon ' />
+                    </div>
+                    <p className='skill-section__icon--text'>Node js</p>
+                </motion.div>
+                <motion.div className='skill-section--icon__container'
+                    initial={AnimateFrom1}
+                    animate={AnimateTo1}
+                    transition={{ type:"spring", stiffness:120  }}>
+                    <div className="skill-section__mystack">
+                        <SiTailwindcss className='skill-section__icon ' />
+                    </div>
+                    <p className='skill-section__icon--text'>Tailwind </p>
+                </motion.div>
+                <motion.div className='skill-section--icon__container'
+                    initial={AnimateFrom1}
+                    animate={AnimateTo1}
+                    transition={{ type:"spring", stiffness:120  }}>
+                    <div className="skill-section__mystack">
+                        <SiMui className='skill-section__icon ' />
+                    </div>
+                    <p className='skill-section__icon--text'>Material ui </p>
                 </motion.div>
            </div>
         </section>

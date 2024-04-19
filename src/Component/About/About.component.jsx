@@ -5,12 +5,12 @@ import profileImg from '../ImageFolder/img.png.jpg';
 const About =()=>{
     // handle pdf download 
     const downloadResume =()=>{
-        fetch("OmobolanleFamotib CV.pdf").then((response)=>{
+        fetch("OmobolanleFamotibe CV.pdf").then((response)=>{
             response.blob().then((blob)=>{
                 const fileURL =window.URL.createObjectURL(blob)
                 let alink = document.createElement("a")
                 alink.href =fileURL;
-                alink.download ="OmobolanleFamotib CV.pdf";
+                alink.download ="OmobolanleFamotibe CV.pdf";
                 alink.click();
             })
 
@@ -26,10 +26,11 @@ const About =()=>{
                     <h3 className="abt-section-heading">ABOUT ME</h3>
                     <p className='abt-section-heading__text'>
                      I'm a Web Developer based in Lagos, Nigerian. I focus on creating user‑friendly websites with preference to the React.js framework.
-                     I am proficient in HTML and CSS also, and I have built some other simple projects with JavaScript and SASS.
+                     I’ve worked in-house and remotely on projects for different brands, agencies, and startups. I care deeply about creating world-class, useful and beautiful products that help people and make a difference.
+                     {/* I am proficient in HTML and CSS also, and I have built some other simple projects with JavaScript and SASS.
                      I'm passionate and motivated in taking on any challenges. when building or cloning web projects,
                      I strongly adhere to Responsive Design, Great UI/UX & Accessibility and Reusable & minimal code principles which makes my websites both unique and scaleable.
-                     In my spare time, I love to watch movies and Read.
+                     In my spare time, I love to watch movies and Read. */}
                     </p>
                     <div className='cv_section'>
                      {/* <a target='_blank' href='https://1drv.ms/b/s!ApVoLCMLSnQighMqpDtsKOmr3OFs' download='resume' className='cv_section__dwnload'>Download Resume</a> */}
