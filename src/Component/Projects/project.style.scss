@@ -10,7 +10,8 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
     margin-top: 4rem;
     // width: 400px;
     width: 410px;
-    height: 380px;
+    height: 280px;
+    max-height: fit-content;
     perspective: 1000px;
     -moz-perspective: 1000px;
 
@@ -41,7 +42,8 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
         display: flex;
         flex-direction: column;
         text-align: center;
-        padding: 1rem 3rem 0 3rem;
+        // padding: 1rem 3rem 0 3rem;
+        padding: 1rem;
 
     }
 }
@@ -53,14 +55,20 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
 }
 .project-section__profile{
     width: 100%;
+    object-fit: contain;
+    object-position:center ;
 }
+
+
 
 .social-container {
     margin-top: 1rem;
     display: flex;
     align-items: center;
    position:absolute;
-    bottom: 2rem;
+    bottom: 0.6rem;
+    justify-content: center;
+  
 
 }
 
@@ -74,13 +82,17 @@ $Main-font:'Josefin Sans','Roboto','EB+Garamond', sans-serif;
         padding: .3rem 1rem;
         border-radius: 30px;
         color: $Background-color--white;
-        margin-bottom: .6rem;
+        margin-bottom: .2rem;
 
     }
 
     &-icon {
         color: $Background-color--white;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+
+    }
+    .project-section__links-icon--text{
+        font-size: 0.6rem;
 
     }
 }

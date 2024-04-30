@@ -1,6 +1,8 @@
 import ProjectsProps from "./ProjectProp.component";
 import projectImg from '../ImageFolder/linktree.png.jpg';
 import morecipeimg from '../ImageFolder/MorecipeImg.png.jpg'
+import movieList from "../ImageFolder/movie-listing.PNG"
+import gamePride from "../ImageFolder/gamepride.PNG"
 import blogimage from '../ImageFolder/meta-bnb--png.jpg'
 import sshProject from "../../Component/ImageFolder/ssh.png"
 import mobilProject from "../../Component/ImageFolder/mobilProject.PNG"
@@ -9,7 +11,19 @@ import mobilProject from "../../Component/ImageFolder/mobilProject.PNG"
 const Projects =(props)=>{
   return (
     <div className="Project-container">
-      <ProjectsProps text="Mobil is an E-learning Gaming platform for kids. its basically designed for Glo and Mtn subscribers.
+      <ProjectsProps text ="mo-movie-listing is a movie listing app built using react and tailwind css. this application allows users get the list of all recent movies and information about each of the movie.
+      the application is build on themoviedb."
+        image = {movieList}
+        github='https://github.com/IAMMORBOR/movie-list'
+        link ='https://mo-movie-list.netlify.app/'
+      />
+      <ProjectsProps text ="Game pride  is an online gaming platform that allows user to play game, wagger or bet on a game and win more doing what they love. 
+      this application is built using Typescript and Tailwind css ."
+        image = {gamePride}
+        github='https://github.com/gamepride-co/frontend-version'
+        link ='https://gamepride.io/'
+      />
+      <ProjectsProps text="Mobil is mobile first E-learning Gaming platform for kids. its basically designed for Glo and Mtn subscribers.
        Mobil allows kids to play game and learn at the same time. Mobil games are subscription based"
           image= {mobilProject}
            github ='https://github.com/Loremexcellentiam/mobi-fe'
@@ -37,7 +51,7 @@ const Projects =(props)=>{
        github='https://github.com/IAMMORBOR/MetaBNB--HNG-project.git'
        link = 'https://meta-bnb-mo-version.netlify.app'
       />
-      <ProjectsProps text ="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      {/* <ProjectsProps text ="Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Iure veritatis necessitatibus doloremque
        placeat temporibus! Iusto ipsam sed minima accusantium
        laborum delectus voluptatibus recusandae! Suscipit 
@@ -45,7 +59,8 @@ const Projects =(props)=>{
         image = {projectImg}
         github='https://github.com/IAMMORBOR/Linktree-HNG-Stage-1-.git'
         link ='https://linktreebymo.netlify.app/'
-      />
+      /> */}
+      
     </div>
 
   ) 
