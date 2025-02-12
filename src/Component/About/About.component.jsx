@@ -5,12 +5,12 @@ import profileImg from '../ImageFolder/img.png.jpg';
 const About =()=>{
     // handle pdf download 
     const downloadResume =()=>{
-        fetch("OmobolanleFamotibe CV.pdf").then((response)=>{
+        fetch("Omobolanle A. Famotibe Resume.pdf").then((response)=>{
             response.blob().then((blob)=>{
                 const fileURL =window.URL.createObjectURL(blob)
                 let alink = document.createElement("a")
                 alink.href =fileURL;
-                alink.download ="OmobolanleFamotibe CV.pdf";
+                alink.download ="Omobolanle A. Famotibe Resume.pdf";
                 alink.click();
             })
 
