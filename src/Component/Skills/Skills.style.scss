@@ -9,6 +9,7 @@ $Main-font:'Josefin+Sans','Roboto','EB+Garamond', sans-serif;
 
 .skill-section{
     background-color:#f1f1f1;
+ 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,8 +28,8 @@ $Main-font:'Josefin+Sans','Roboto','EB+Garamond', sans-serif;
 
     }
     &__mystack{
-        height: 6rem;
-        width: 6rem;
+        height:4.5rem;
+        width:4.5rem;
         border-radius: 50%;
         background-color:$Background-colour-green-3;
         display: flex;
@@ -37,7 +38,7 @@ $Main-font:'Josefin+Sans','Roboto','EB+Garamond', sans-serif;
       
     }
     &__icon{
-        font-size: 2.5rem;
+        font-size: 2rem;
         color:#fff;
         font-weight: 800;
         
@@ -46,7 +47,7 @@ $Main-font:'Josefin+Sans','Roboto','EB+Garamond', sans-serif;
        &--text{
         color: $Background-colour-green-3;
         font-weight: 800;
-        font-size: 1rem;
+        font-size: 0.8rem;
         
        }
     }
@@ -69,7 +70,7 @@ $Main-font:'Josefin+Sans','Roboto','EB+Garamond', sans-serif;
 
 @media (max-width:900px){
     .skill-section{
-        padding: 6rem 0;
+        padding: 6rem 0rem;
         max-height: 100vh;
        
        &--stack{
@@ -98,6 +99,7 @@ $Main-font:'Josefin+Sans','Roboto','EB+Garamond', sans-serif;
 @media (max-width:600px){
     .skill-section{
       width: 100%;
+      padding: 4rem 2rem;
       
       max-height: 100vh;
 

@@ -1,5 +1,4 @@
 import './project.style.scss';
-
 import {AiFillGithub} from 'react-icons/ai'
 import {TbWorld}from 'react-icons/tb'
 
