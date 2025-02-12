@@ -11,7 +11,7 @@ import lexlance from "../../Component/ImageFolder/lexlanceImage.png"
 
 const Projects =(props)=>{
   return (
-    // <div className="Project-container">HELLO WORLD</div>
+   
     <div className="Project-container">
       <ProjectsProps text ="mo-movie-listing is a movie listing app built using react and tailwind css. this application allows users get the list of all recent movies and information about each of the movie.
       the application is build on themoviedb."
